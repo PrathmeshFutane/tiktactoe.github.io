@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tik tac toe</title>
+    <link rel="stylesheet" href="newcss.css">
+    <script src="javascript.js" type="text/javascript" charset="utf-8" async defer></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: whitesmoke;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg, cyan, blue 40%, teal);
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+
+        }
+
+        #heading {
+            color: whitesmoke;
+            font-size: 30px;
+            font-family: cursive;
+            margin-bottom: 20px;
+        }
+
+        .main1 {
+            background-color: yellowgreen;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .main2 {
+            background-color: yellowgreen;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+        }
+
+        .main3 {
+            background-color: yellowgreen;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .alldiv1 {
+
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+
+        .alldiv2 {
+
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+
+        .alldiv3 {
+
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div id="heading">Start to play first X's turn </div>
+        <div class="main">
+            <div class="main1">
+                <div class="alldiv1" id="r1" onclick="printx('1')"></div>
+                <div class="alldiv1" id="r2" onclick="printx('2')"></div>
+                <div class="alldiv1" id="r3" onclick="printx('3')"></div>
+            </div>
+
+            <div class="main2">
+                <div class="alldiv2" id="r4" onclick="printx('4')"></div>
+                <div class="alldiv2" id="r5" onclick="printx('5')"></div>
+                <div class="alldiv2" id="r6" onclick="printx('6')"></div>
+            </div>
+
+            <div class="main3">
+                <div class="alldiv3" id="r7" onclick="printx('7')"></div>
+                <div class="alldiv3" id="r8" onclick="printx('8')"></div>
+                <div class="alldiv3" id="r9" onclick="printx('9')"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
